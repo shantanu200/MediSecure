@@ -117,7 +117,7 @@ const Form = () => {
 
     if (post.type === "image/jpeg" || post.type === "image/png") {
       const data = new FormData();
-      data.append("upload_preset", "hello");
+      data.append("upload_preset", "blockchain");
       data.append("file", post);
       data.append("cloud_name", "dgrxzxtd8");
       fetch("https://api.cloudinary.com/v1_1/dgrxzxtd8/image/upload", {

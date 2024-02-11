@@ -26,7 +26,7 @@ const UserCard = ({ user }) => {
 
   const modifyString = (str) => {
     console.log(str)
-    return str.match(/.{1,4}/g).join("-");
+    return str?.match(/.{1,4}/g).join("-");
   };
 
   const RenderCard = () => {
